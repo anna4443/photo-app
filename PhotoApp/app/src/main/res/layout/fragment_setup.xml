@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SetupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="20dp">
+
+           <RadioGroup
+               android:id="@+id/rgPackages"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RadioButton
+                   android:id="@+id/rbFree"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FREE"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="20dp"
+                   android:text=" - price: 0$, upload size: 100x100, daily upload limit: 5"/>
+
+               <RadioButton
+                   android:id="@+id/rbPro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PRO"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="20dp"
+                   android:text=" - price: 10$, upload size: 200x200, daily upload limit: 15"/>
+
+               <RadioButton
+                   android:id="@+id/rbGold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GOLD"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="20dp"
+                   android:text=" - price: 25$, upload size: 500x500, daily upload limit: 40"/>
+           </RadioGroup>
+
+           <Button
+               android:id="@+id/btnSavePackage"
+               android:layout_width="150dp"
+               android:layout_height="50dp"
+               android:text="Save package"
+               android:textAllCaps="false"
+               android:layout_gravity="center"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@android:color/darker_gray"
+               android:layout_gravity="center"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"/>
+
+           <TextView
+                   android:id="@+id/tvUploadPhoto"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Upload photo"
+                   android:textSize="20sp"
+                   android:textAlignment="center"
+                   android:layout_marginBottom="20dp"/>
+
+           <TextView
+               android:id="@+id/tvClickToUpload"
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:text="Click on here to get photo"
+               android:layout_marginBottom="10dp"/>
+
+           <ImageView
+               android:id="@+id/ivPhoto"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@color/colorLightGrey" />
+
+           <EditText
+               android:id="@+id/etDescription"
+               android:layout_width="300dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:hint="Add description"
+               android:layout_marginTop="20dp"/>
+
+               <Button
+                   android:id="@+id/btnUploadPhoto"
+                   android:layout_width="150dp"
+                   android:layout_height="50dp"
+                   android:text="Upload photo"
+                   android:textAllCaps="false"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="30dp"/>
+       </LinearLayout>
+</ScrollView>
